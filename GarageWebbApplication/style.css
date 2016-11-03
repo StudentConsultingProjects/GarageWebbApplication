@@ -5830,6 +5830,11 @@ h4, h5, h6 {
 .navbar {
   border-radius: 0 !important; }
 
+.nav.navbar-nav li a.active {
+  color: #088cff;
+  transition: color ease-in-out 0.1s;
+  -webkit-transition: color ease-in-out 0.1s; }
+
 .navbar-brand > i {
   color: #088cff;
   transition: transform ease-in-out 0.1s;

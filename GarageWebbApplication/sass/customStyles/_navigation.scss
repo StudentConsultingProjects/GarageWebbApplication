@@ -1,4 +1,14 @@
-﻿.navbar-brand
+﻿.nav.navbar-nav
+{
+    li a.active
+    {
+        color: $mainColor;
+        transition: color ease-in-out 0.1s;
+        -webkit-transition: color ease-in-out 0.1s;
+    }
+}
+
+.navbar-brand
 {
     & > i
     {

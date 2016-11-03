@@ -2,7 +2,9 @@
 
     $(document).on("click", ".toggleScroll", function (e) {
         var el = $(this).data("target");
-        console.log(el);
+        
+        $(".navbar-nav").find(".active").removeClass("active");
+        $(this).addClass("active");
 
         $('html, body').animate({
             scrollTop: ($(el).offset().top) - ($(".navbar").eq(0).height()) 
