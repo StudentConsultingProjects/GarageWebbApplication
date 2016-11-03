@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Garage Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="project.vendor.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navigation" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand toggleScroll" href="#" data-target="#home">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="top-navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" data-target="#home" class="toggleScroll">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" data-target="#vehicles-in-garage" class="toggleScroll">Vehicles in garage</a></li>
+                    <li><a href="#" data-target="#about-us" class="toggleScroll">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="page-content">
+        <div class="main-splashart min-height-vh" id="home">
+            <div class="overlay"></div>
+            <div class="hello-message">
+                <h2>Welcome to the Mockup Garage!</h2>
+                <h4>This is where your vehicles get stored!</h4>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="row min-height-vh" id="vehicles-in-garage">
+                <h3 class="col-xs-10 col-xs-offset-1 text-center">
+                    In this garage you can store every type of vehicles you can think of.<br />
+                    Nothing is to big or to small, it's only limited by your imagination.
+                </h3>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap vehicle-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Tesla Model S</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Reg-num :</strong><span>abc123</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Model year :</strong><span>2016</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Owner :</strong><span>Mike Perry</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap vehicle-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">SAS</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Reg-num :</strong><span>bbb333</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Model year :</strong><span>2004</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Owner :</strong><span>SAS</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap vehicle-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Harley-Davidson FatBoy</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Reg-num :</strong><span>lsd999</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Model year :</strong><span>2012</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Owner :</strong><span>John Cena</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap vehicle-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Yacht Dominator</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Reg-num :</strong><span>åäö000</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Model year :</strong><span>2017</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Owner :</strong><span>Dan Bilzerian</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="row min-height-vh" id="about-us">
+                <div class="row">
+                    <article class="col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <h2>Get in contact with us!</h2>
+
+                        <form action="" method="post" class="contact-form">
+                            <input type="text" name="firstname" placeholder="Firstname" class="col-xs-12" />
+                            <input type="text" name="lastname" placeholder="Lastname" class="col-xs-12" />
+                            <input type="email" name="email" placeholder="Email address" class="col-xs-12" />
+                            <textarea name="message" placeholder="What's on your mind?'" class="col-xs-12"></textarea>
+                            <button type="submit" name="send" class="col-xs-12"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                        </form>
+                    </article>
+
+                    <article class="col-md-6 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <h2>Who are we?</h2>
+                        <p>Spicy jalapeno bacon ipsum dolor amet pancetta meatloaf venison sausage, tongue alcatra kevin pastrami prosciutto andouille jerky turkey. Biltong short ribs turkey spare ribs. Jowl pork loin brisket, ball tip andouille pancetta short loin biltong spare ribs leberkas venison beef ribs burgdoggen. Turducken shoulder ball tip shank.</p>
+                        <p>Meatloaf sausage ball tip flank, beef pancetta turducken jerky corned beef porchetta. Ground round filet mignon chuck cupim, porchetta ball tip boudin. Turducken swine jerky, porchetta chuck pork belly picanha bresaola chicken. Cupim venison tri-tip ground round beef pancetta. Jowl tongue fatback, t-bone pork porchetta corned beef venison tail filet mignon burgdoggen salami spare ribs.</p>
+                        <p>Meatball biltong shankle flank. Biltong short ribs ham hock doner, ball tip tenderloin pancetta. Kevin tri-tip pig, spare ribs pancetta doner kielbasa salami. Jerky porchetta ribeye, picanha beef strip steak beef ribs swine. Frankfurter ribeye hamburger salami capicola pork cow cupim rump ham jerky.</p>
+                    </article>
+                </div>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap staff-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Henry Öhman, CEO</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Phone :</strong><span>070-1234567</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Email :</strong><span>test@test.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap staff-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Sara Lundmark, AD</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Phone :</strong><span>070-1234567</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Email :</strong><span>test@test.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap staff-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Mia Åström, AI</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Phone :</strong><span>070-1234567</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Email :</strong><span>test@test.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 col-sm-6 col-xs-6 card">
+                    <div class="spacer">
+                        <div class="wrap staff-image">
+                            <div class="info">
+                                <h4 class="col-xs-12 text-center">Jonas Larsson, Marketing</h4>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Phone :</strong><span>070-1234567</span></p>
+                                <p class="col-xs-10 col-xs-offset-1"><strong>Email :</strong><span>test@test.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="container">
+                <p class="col-xs-12 text-center">Made by Kristoffer Lindström &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="project.core.min.js"></script>
+</body>
+</html>

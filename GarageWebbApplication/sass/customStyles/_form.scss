@@ -1,0 +1,45 @@
+﻿.contact-form
+{
+    input, 
+    button, 
+    textarea
+    {
+        border: 1px solid $borderColor;
+        font-size: 16px;
+
+        &:focus
+        {
+            outline: 0;
+            border-color: $mainColorDarker;
+        }
+    }
+
+    input, 
+    button
+    {
+        height: 50px;
+        margin-bottom: 10px;
+
+        &[type=submit]
+        {
+            border: 1px solid transparent;
+            background: $mainColor;
+            color: $textColor;
+
+            &:hover,
+            &:focus
+            {
+                background-color: $mainColorDarker;
+            }
+        }
+
+    }
+
+    textarea
+    {
+        height: 150px;
+        margin-bottom: 10px;
+        resize: none;
+        padding: 10px;
+    }
+}

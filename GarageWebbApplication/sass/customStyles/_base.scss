@@ -1,0 +1,192 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.min-height-vh
+{
+    min-height: 100vh;
+}
+
+.main-splashart
+{
+    background: url('../../media/background.jpg') center center no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 100vw;
+
+    .overlay
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        background: rgba(8,140,255,1);
+        background: -moz-linear-gradient(-45deg, rgba(8,140,255,1) 0%, rgba(3,215,114,0.48) 50%, rgba(0,255,38,0.48) 77%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(8,140,255,1)), color-stop(50%, rgba(3,215,114,0.48)), color-stop(77%, rgba(0,255,38,0.48)));
+        background: -webkit-linear-gradient(-45deg, rgba(8,140,255,1) 0%, rgba(3,215,114,0.48) 50%, rgba(0,255,38,0.48) 77%);
+        background: -o-linear-gradient(-45deg, rgba(8,140,255,1) 0%, rgba(3,215,114,0.48) 50%, rgba(0,255,38,0.48) 77%);
+        background: -ms-linear-gradient(-45deg, rgba(8,140,255,1) 0%, rgba(3,215,114,0.48) 50%, rgba(0,255,38,0.48) 77%);
+        background: linear-gradient(135deg, rgba(8,140,255,1) 0%, rgba(3,215,114,0.48) 50%, rgba(0,255,38,0.48) 77%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#088cff', endColorstr='#00ff26', GradientType=1 );
+    }
+
+    .hello-message
+    {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 9;
+        color: $textColor;
+
+        h2
+        {
+            padding: 0;
+            padding-top: 20px;
+            font-size: 5em;
+        }
+
+        h4
+        {
+            padding: 0;
+            padding-bottom: 30px;
+            font-size: 2.6em;
+        }
+    }
+}
+
+.card
+{
+    padding: 0;
+
+    .spacer
+    {
+        position: relative;
+        margin: 20px 5px;
+    
+        &::after
+        {
+            padding-top: 177.8%;
+            display: block;
+            content: '';
+        }
+
+        & > .wrap
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            .info
+            {
+                position: absolute;
+                background: rgba(0, 0, 0, .85);
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 33%;
+                padding: 5px;
+                color: $textColor;
+
+                h4
+                {
+                    padding: 0;
+                    padding-bottom: 8px;
+                }
+
+                p 
+                {
+                    margin: 0;
+                    padding: 0;
+
+                    strong 
+                    {
+                        width: 45%;
+                        display: inline-block;
+                    }
+
+                    span 
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    &:nth-of-type(1) > .spacer > .vehicle-image
+    {
+        background: url('../../media/vehicle1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(2) > .spacer > .vehicle-image
+    {
+        background: url('../../media/vehicle2.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(3) > .spacer > .vehicle-image
+    {
+        background: url('../../media/vehicle3.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(4) > .spacer > .vehicle-image
+    {
+        background: url('../../media/vehicle4.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(1) > .spacer > .staff-image
+    {
+        background: url('../../media/staff1.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(2) > .spacer > .staff-image
+    {
+        background: url('../../media/staff2.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(3) > .spacer > .staff-image
+    {
+        background: url('../../media/staff3.jpg') center center no-repeat;
+        background-size: cover;
+    }
+
+    &:nth-of-type(4) > .spacer > .staff-image
+    {
+        background: url('../../media/staff4.jpg') center center no-repeat;
+        background-size: cover;
+    }
+}
+
+footer
+{
+    height: 80px;
+    background: $bg-color;
+    margin-top: 100px;
+
+    p 
+    {
+        color: $textColor;
+        line-height: 80px;
+        font-size: 16px;
+        margin: 0;
+        white-space: nowrap;
+    }
+}
